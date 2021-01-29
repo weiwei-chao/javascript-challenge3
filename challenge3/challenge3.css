@@ -1,0 +1,105 @@
+.background{
+  background-color: #1747A6;
+  border: 5px solid white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 50px;
+  height: 700px;
+  align-items: center;
+  grid-template-areas:
+  "home home pe pe gu gu"
+  "one one reset reset two two";
+}
+
+#home{
+  grid-area: home;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+#period{
+  grid-area: pe;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+  padding: 30px;
+}
+
+#guest{
+  grid-area: gu;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+#penalty1{
+  grid-area: one;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#penalty2{
+  grid-area: two;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reset{
+  grid-area: reset;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px dotted white;
+}
+
+h1{
+  color: white;
+  font-family: Impact, fantasy;
+  font-size: 60px;
+  margin: 0
+}
+
+
+button{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#scoreH{
+  color: #FB3F3F;
+  background-color: black;
+  padding: 20px;
+  width: 150px;
+  font-size: 50px;
+}
+
+#scoreG{
+  color: #FB3F3F;
+  background-color: black;
+  padding: 20px;
+  width: 150px;
+  font-size: 50px;
+}
+
+#pe{
+  color: #FBF03F;
+  background-color: black;
+  padding: 20px;
+  width: 150px;
+  font-size: 50px;
+}
+
+.p{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
