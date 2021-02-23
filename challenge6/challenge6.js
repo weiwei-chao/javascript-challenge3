@@ -1,4 +1,4 @@
-let title = [`Soul`, `Your Na(me Engraved Herein`, `Mulan`, `Onward`, `Tenet`, `Wonder Woman 1984`]
+let title = [`Soul`, `Your Name Engraved Herein`, `Mulan`, `Onward`, `Tenet`, `Wonder Woman 1984`]
 let pic = [`<img src="https://lumiere-a.akamaihd.net/v1/images/p_disney_soul_20263_eac955fc.jpeg">`, `<img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Your_Name_Engraved_Herein_Poster.jpg/220px-Your_Name_Engraved_Herein_Poster.jpg">`, `<img src="https://static.wikia.nocookie.net/disney/images/e/e9/Mulan_%282020%2C_Disney%2B_Original_Poster%29.jpg/revision/latest?cb=20200809175515">`,`<img src="https://lumiere-a.akamaihd.net/v1/images/p_onward_19024_dbb512d5.jpeg">`, `<img src="https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg">`,`<img src="https://upload.wikimedia.org/wikipedia/en/4/4e/Wonder_Woman_1984.png">`, ]
 
 var x
