@@ -69,13 +69,13 @@ function two2(){
 }
 
 function two3(){
+  document.querySelector("#picture").src= "52.jpg";
   document.querySelector("h3").innerHTML = "You decide to sleep till 12:00. However, you still have homework to do. Should you sleep to 12 or do homework?"
   document.querySelector("#button1").innerHTML = "SLEEP";
   document.querySelector("#button2").innerHTML = "HW";
   document.querySelector("body").style.backgroundImage = "url('4.jpg')"
   document.querySelector("#button1").onclick = three6;
   document.querySelector("#button2").onclick = three7;
-  document.querySelector("#picture").src= "52.jpg";
 }
 
 function three(){
@@ -119,6 +119,7 @@ function three3(){
   document.querySelector("#button1").onclick = four7;
   document.querySelector("#button2").onclick = four8;
   document.querySelector("#button3").onclick = four9;
+  document.querySelector("#picture").src = "33.jpeg"
 }
 
 function three4(){
@@ -154,6 +155,7 @@ function three6(){
 }
 
 function three7(){
+  document.querySelector("#picture").src = "33.jpeg"
   document.querySelector("h3").innerHTML = "You decide to do homework. However, your crush suddenly asks you if you can go to prom with him. What should you respond?"
   document.querySelector("#button1").innerHTML = "YEAH OKAY";
   document.querySelector("#button2").innerHTML = "NO I'M NOT READY LOL";
@@ -265,6 +267,7 @@ function four7(){
   document.querySelector("#button1").onclick = five18;
   document.querySelector("#button2").onclick = five18;
   document.querySelector("#button3").onclick = five18;
+  document.querySelector("#picture").style.display = "none";
 }
 
 function four8(){
@@ -353,10 +356,11 @@ function four17(){
   document.querySelector("#button1").innerHTML = "SORRY YOU'RE NOT MY DESTINY";
   document.querySelector("#button2").innerHTML = "GO AWAY";
   document.querySelector("#button3").innerHTML = "ACTUALLY... I LIKE YOUR BFF MORE";
-  document.querySelector("body").style.backgroundImage = "url('17.jpg')"
+  document.querySelector("body").style.backgroundImage = "url('17.png')"
   document.querySelector("#button1").onclick = five18;
   document.querySelector("#button2").onclick = five18;
   document.querySelector("#button3").onclick = five18;
+  document.querySelector("#picture").style.display = "none";
 }
 
 function five(){
