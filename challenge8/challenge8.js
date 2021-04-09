@@ -590,7 +590,7 @@ function five19(){
 }
 
 function five20(){
-  document.querySelector("h3").innerHTML = "Ms. Pamela is so shock she suddenly faints. Your fault..."
+  document.querySelector("h3").innerHTML = "Ms. Pamela is so shocked she suddenly faints. Your fault..."
   document.querySelector("#button1").style.display = "none";
   document.querySelector("#button2").style.display = "none";
   document.querySelector("#button3").style.display = "none";
