@@ -52,3 +52,35 @@ seven.addEventListener('click', function (event) {
     d7.play();
 });
 
+document.addEventListener("keydown", drum);
+
+function drum(event){
+    if(event.keyCode === 65){
+      d1.load();
+      d1.play();
+    }
+    if(event.keyCode === 76){
+        d2.load();
+        d2.play();
+    }
+    if(event.keyCode === 90){
+        d3.load();
+        d3.play();
+    }
+    if(event.keyCode === 70){
+        d4.load();
+        d4.play();
+    }
+    if(event.keyCode === 72){
+        d5.load();
+        d5.play();
+    }
+    if(event.keyCode === 67){
+        d6.load();
+        d6.play();
+    }
+    if(event.keyCode === 78){
+        d7.load();
+        d7.play();
+    }
+}
