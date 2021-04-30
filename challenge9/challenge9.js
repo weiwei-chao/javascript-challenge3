@@ -32,24 +32,162 @@ var g4 = new Audio("g4.m4a")
 var g5 = new Audio("g5.m4a")
 var g6 = new Audio("g6.m4a")
 
+function stop(){
+  gSong.pause()
+}
 
 function pPlay(){
-  pSong.play()
+  p15.load();
+  p15.play();
+  document.getElementById("p15").style.backgroundColor= "gray";
+  setTimeout(function(){
+    document.getElementById("p15").style.backgroundColor= "white";
+    p13.load();
+    p13.play();
+    document.getElementById("p13").style.backgroundColor= "gray";
+    setTimeout(function(){
+      document.getElementById("p13").style.backgroundColor= "white";
+      p13.load();
+      p13.play();
+      document.getElementById("p13").style.backgroundColor= "gray";
+      setTimeout(function(){
+        document.getElementById("p13").style.backgroundColor= "white";
+        p14.load();
+        p14.play();
+        document.getElementById("p14").style.backgroundColor= "gray";
+        setTimeout(function(){
+          document.getElementById("p14").style.backgroundColor= "white";
+          p12.load();
+          p12.play();
+          document.getElementById("p12").style.backgroundColor= "gray";
+          setTimeout(function(){
+            document.getElementById("p12").style.backgroundColor= "white";
+            p12.load();
+            p12.play();
+            document.getElementById("p12").style.backgroundColor= "gray";
+            setTimeout(function(){
+              document.getElementById("p12").style.backgroundColor= "white";
+              p11.load();
+              p11.play();
+              document.getElementById("p11").style.backgroundColor= "gray";
+              setTimeout(function(){
+                document.getElementById("p11").style.backgroundColor= "white";
+                p12.load();
+                p12.play();
+                document.getElementById("p12").style.backgroundColor= "gray";
+                setTimeout(function(){
+                  document.getElementById("p12").style.backgroundColor= "white";
+                  p13.load();
+                  p13.play();
+                  document.getElementById("p13").style.backgroundColor= "gray";
+                  setTimeout(function(){
+                    document.getElementById("p13").style.backgroundColor= "white";
+                    p14.load();
+                    p14.play();
+                    document.getElementById("p14").style.backgroundColor= "gray";
+                    setTimeout(function(){
+                      document.getElementById("p14").style.backgroundColor= "white";
+                      p15.load();
+                      p15.play();
+                      document.getElementById("p15").style.backgroundColor= "gray";
+                      setTimeout(function(){
+                        document.getElementById("p15").style.backgroundColor= "white";
+                        p15.load();
+                        p15.play();
+                        document.getElementById("p15").style.backgroundColor= "gray";
+                        setTimeout(function(){
+                          document.getElementById("p15").style.backgroundColor= "white";
+                          p15.load();
+                          p15.play();
+                          document.getElementById("p15").style.backgroundColor= "gray";
+                          setTimeout(function(){
+                            document.getElementById("p15").style.backgroundColor= "white";
+                            p15.load();
+                            p15.play();
+                            document.getElementById("p15").style.backgroundColor= "gray";
+                            setTimeout(function(){
+                              document.getElementById("p15").style.backgroundColor= "white";
+                              p13.load();
+                              p13.play();
+                              document.getElementById("p15").style.backgroundColor= "gray";
+                              setTimeout(function(){
+                                document.getElementById("p15").style.backgroundColor= "white";
+                                p13.load();
+                                p13.play();
+                                document.getElementById("p13").style.backgroundColor= "gray";
+                                setTimeout(function(){
+                                  document.getElementById("p13").style.backgroundColor= "white";
+                                  p14.load();
+                                  p14.play();
+                                  document.getElementById("p14").style.backgroundColor= "gray";
+                                  setTimeout(function(){
+                                    document.getElementById("p14").style.backgroundColor= "white";
+                                    p12.load();
+                                    p12.play();
+                                    document.getElementById("p12").style.backgroundColor= "gray";
+                                    setTimeout(function(){
+                                      document.getElementById("p12").style.backgroundColor= "white";
+                                      p12.load();
+                                      p12.play();
+                                      document.getElementById("p12").style.backgroundColor= "gray";
+                                      setTimeout(function(){
+                                        document.getElementById("p12").style.backgroundColor= "white";
+                                        p11.load();
+                                        p11.play();
+                                        document.getElementById("p11").style.backgroundColor= "gray";
+                                        setTimeout(function(){
+                                          document.getElementById("p11").style.backgroundColor= "white";
+                                          p13.load();
+                                          p13.play();
+                                          document.getElementById("p13").style.backgroundColor= "gray";
+                                          setTimeout(function(){
+                                            document.getElementById("p13").style.backgroundColor= "white";
+                                            p15.load();
+                                            p15.play();
+                                            document.getElementById("p15").style.backgroundColor= "gray";
+                                            setTimeout(function(){
+                                              document.getElementById("p15").style.backgroundColor= "white";
+                                              p15.load();
+                                              p15.play();
+                                              document.getElementById("p15").style.backgroundColor= "gray";
+                                              setTimeout(function(){
+                                                document.getElementById("p15").style.backgroundColor= "white";
+                                                p11.load();
+                                                p11.play();
+                                                document.getElementById("p11").style.backgroundColor= "gray";
+                                                setTimeout(function(){
+                                                  document.getElementById("p11").style.backgroundColor= "white";
+                                                },500);
+                                              },500);
+                                            },500);
+                                          },500);
+                                        },500);
+                                      },1000);
+                                    },500);
+                                  },500);
+                                },1000);
+                              },500);
+                            },500);
+                          },1000);
+                        },500);
+                      },500);
+                    },500);
+                  },500);
+                },500);
+              },500);
+            },1000);
+          },500);
+        },500);
+      },1000);
+    },500);
+  },500);
 }
 
 function gPlay(){
   gSong.play()
 }
 
-
-function stop(){
-  gSong.pause()
-  pSong.pause()
-  dSong.pause()
-}
-
 document.addEventListener("keydown", piano);
-
 
 var one = document.querySelector('#g1');
 one.addEventListener('mousemove', function(event) {
@@ -87,7 +225,9 @@ function piano(event){
     gSong.pause();
     dSong.pause();
   }
+
   if(event.keyCode === 81){
+    p1.load();
     p1.play();
     document.getElementById("p1").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -95,6 +235,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 87){
+    p2.load();
     p2.play();
     document.getElementById("p2").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -102,6 +243,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 69){
+    p3.load();
     p3.play();
     document.getElementById("p3").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -109,6 +251,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 82){
+    p4.load();
     p4.play();
     document.getElementById("p4").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -116,6 +259,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 84){
+    p5.load();
     p5.play();
     document.getElementById("p5").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -123,6 +267,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 89){
+    p6.load();
     p6.play();
     document.getElementById("p6").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -130,6 +275,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 85){
+    p7.load();
     p7.play();
     document.getElementById("p7").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -137,6 +283,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 73){
+    p8.load();
     p8.play();
     document.getElementById("p8").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -144,6 +291,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 79){
+    p9.load();
     p9.play();
     document.getElementById("p9").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -151,6 +299,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 80){
+    p10.load();
     p10.play();
     document.getElementById("p10").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -158,6 +307,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 65){
+    p11.load();
     p11.play();
     document.getElementById("p11").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -165,6 +315,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 83){
+    p12.load();
     p12.play();
     document.getElementById("p12").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -172,6 +323,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 68){
+    p13.load();
     p13.play();
     document.getElementById("p13").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -179,6 +331,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 70){
+    p14.load();
     p14.play();
     document.getElementById("p14").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -186,6 +339,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 71){
+    p15.load();
     p15.play();
     document.getElementById("p15").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -193,6 +347,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 72){
+    p16.load();
     p16.play();
     document.getElementById("p16").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -200,6 +355,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 74){
+    p17.load();
     p17.play();
     document.getElementById("p17").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -207,6 +363,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 75){
+    p18.load();
     p18.play();
     document.getElementById("p18").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -214,6 +371,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 76){
+    p19.load();
     p19.play();
     document.getElementById("p19").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -221,6 +379,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 186){
+    p20.load();
     p20.play();
     document.getElementById("p20").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -228,6 +387,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 222){
+    p21.load();
     p21.play();
     document.getElementById("p21").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -235,6 +395,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 188){
+    p22.load();
     p22.play();
     document.getElementById("p22").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -242,6 +403,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 190){
+    p23.load();
     p23.play();
     document.getElementById("p23").style.backgroundColor= "gray";
     setTimeout(function(){
@@ -249,6 +411,7 @@ function piano(event){
     },200);
   }
   if(event.keyCode === 191){
+    p24.load();
     p24.play();
     document.getElementById("p24").style.backgroundColor= "gray";
     setTimeout(function(){
